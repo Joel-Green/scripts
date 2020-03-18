@@ -1,0 +1,2 @@
+echo $(date +"%H:%M hrs")
+acpi

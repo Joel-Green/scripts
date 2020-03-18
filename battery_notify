@@ -1,0 +1,12 @@
+#!/bin/sh
+while true
+do
+if [[ ( "$(cat /sys/class/power_supply/BAT0/status)" == Discharging ) ]] 
+then
+	if [[ ( "$(cat /sys/class/power_supply/BAT0/capacity)" -le 20  ) ]]
+	then
+		notify-send -u critical "charge now" "battery at $(cat /sys/class/power_supply/BAT0/capacity)%"
+	fi
+fi
+sleep 120s
+done
