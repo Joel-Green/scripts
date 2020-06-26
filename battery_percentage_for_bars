@@ -1,7 +1,7 @@
 #!/bin/sh
 val="Bat0: $(cat /sys/class/power_supply/BAT0/capacity)"
 val=$val"%"
-if [[ ( "$(cat /sys/class/power_supply/BAT0/status)" == Discharging ) ]]
+if [[ ( "$(cat /sys/class/power_supply/BAT0/status)" != Discharging ) ]]
 then
 	val=$val"*"
 fi
