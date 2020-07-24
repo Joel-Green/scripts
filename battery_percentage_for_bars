@@ -5,4 +5,8 @@ if [[ ( "$(cat /sys/class/power_supply/BAT0/status)" != Discharging ) ]]
 then
 	val=$val"*"
 fi
+if [[ ( "$(cat /sys/class/power_supply/BAT0/status)" == Discharging ) ]]
+then
+	val=$val"-"
+fi
 echo "$val"
