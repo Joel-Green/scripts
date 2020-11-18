@@ -1,3 +1,4 @@
+#!/bin/sh
 while true; do
    xsetroot -name "$(/home/shaw/.scripts/statusbar_command)"
    sleep 0.5s    

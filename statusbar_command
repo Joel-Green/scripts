@@ -1,2 +1,2 @@
-
+#!/bin/sh
 echo " Vol: $(pamixer --get-volume-human) | $(/home/shaw/.scripts/battery_percentage_for_bars) | $(date '+%H:%M:%S hrs | %a %d/%m/%y') "

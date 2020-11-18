@@ -1,3 +1,4 @@
 #!/bin/sh
-autorandrState=$(autorandr | awk '{print $1}')
-[ $autorandrState == "docked" ] && autorandr -l docked
+# autorandrState=$(autorandr | awk '{print $1}')
+# [ $autorandrState == "docked" ] && autorandr -l docked
+autorandr --change
