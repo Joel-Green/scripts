@@ -6,6 +6,7 @@ sxhkd &
 picom &
 flameshot &
 nm-applet --no-agent &
+volctl &
 
 /usr/bin/xmodmap /home/shaw/.Xmodmap &
 
