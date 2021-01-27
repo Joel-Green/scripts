@@ -3,7 +3,7 @@
 autorandr -c
 # stalonetray &
 sxhkd &
-picom &
+picom --experimental-backend &
 flameshot &
 nm-applet --no-agent &
 volctl &
@@ -11,6 +11,6 @@ volctl &
 /usr/bin/xmodmap /home/shaw/.Xmodmap &
 
 # feh --bg-fill /home/shaw/Downloads/wallpaper_redcirclesun.jpg
-feh --bg-fill /home/shaw/.wallpapers/wallpaper_aenami_witcher.jpg
+feh --bg-fill /home/shaw/.wallpapers/wallpaper_tj_holowaychuk_unsplash.jpg
 
 
