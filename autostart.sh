@@ -6,6 +6,7 @@ sxhkd &
 picom --experimental-backend &
 flameshot &
 nm-applet --no-agent &
+thunar --daemon &
 volctl &
 
 /usr/bin/xmodmap /home/shaw/.Xmodmap &
