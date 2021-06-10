@@ -1,4 +1,18 @@
-#!/bin/sh
+#!/bin/bash
 # autorandrState=$(autorandr | awk '{print $1}')
-# [ $autorandrState == "docked" ] && autorandr -l docked
-autorandr --change
+# if [[ $autorandrState == "docked" ]] || [[ $autorandrState == "mobile" ]]
+# then 
+#     autorandr -l docked
+# else
+#     autorandr -l mobile --force 
+# fi
+
+sleep 2
+ if [[ $(mons | awk 'FNR==1 {print $2}')  == 1 ]]
+ then
+     echo "single monitor"
+ 	 /home/shaw/.screenlayout/mobile.sh
+ else
+     echo "dual monitor"
+ 	 /home/shaw/.screenlayout/docked.sh
+ fi
