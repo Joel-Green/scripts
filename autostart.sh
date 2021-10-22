@@ -1,12 +1,24 @@
 #!/bin/bash
+
+killall battery_notify
+killall sxhkd 
+killall picom 
+killall flameshot 
+killall nm-applet
+killall volctl 
+killall clipster
+
+sleep 2s
+
+
 /home/shaw/.scripts/battery_notify &
 # stalonetray &
 sxhkd &
 picom &
 flameshot &
 nm-applet --no-agent &
-thunar --daemon &
 volctl &
+clipster -d & 
 
 /usr/bin/xmodmap /home/shaw/.Xmodmap &
 /home/shaw/.scripts/switchToDockedAutorandr & 

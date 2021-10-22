@@ -1,0 +1,4 @@
+#!/bin/bash
+source ~/sourceFiles/pgadmin/pgadmin4/bin/activate
+
+sudo pgadmin4
