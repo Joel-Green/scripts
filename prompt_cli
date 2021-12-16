@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "$1"
+[ $(echo -e "No\nYes" | fzf --preview "ASD") == "Yes" ] && $2

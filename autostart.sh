@@ -8,7 +8,7 @@ killall nm-applet
 killall volctl 
 killall clipster
 
-sleep 2s
+sleep 1s
 
 
 /home/shaw/.scripts/battery_notify &
@@ -27,6 +27,6 @@ clipster -d &
 # feh --bg-fill /home/shaw/.wallpapers/wallpaper_tj_holowaychuk_unsplash.jpg
 
 # dunst &
-feh --bg-fill ~/Downloads/wallpaper_frequency.png
+#feh --bg-fill ~/Downloads/wallpaper_frequency.png
 
 
