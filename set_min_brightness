@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# bright_val=$(cat /sys/class/backlight/amdgpu_bl0/max_brightness)
+
+
+sudo chmod 766 /sys/class/backlight/amdgpu_bl0/brightness
+echo 1 > /sys/class/backlight/amdgpu_bl0/brightness
