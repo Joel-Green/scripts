@@ -23,6 +23,9 @@ clipster -d &
 /usr/bin/xmodmap /home/shaw/.Xmodmap &
 /home/shaw/.scripts/switchToDockedAutorandr & 
 
+sleep 1s;
+teams;
+
 # feh --bg-fill /home/shaw/Downloads/wallpaper_redcirclesun.jpg
 # feh --bg-fill /home/shaw/.wallpapers/wallpaper_tj_holowaychuk_unsplash.jpg
 

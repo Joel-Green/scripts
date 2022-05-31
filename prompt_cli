@@ -1,3 +1,3 @@
 #!/bin/sh
-echo "$1"
-[ $(echo -e "No\nYes" | fzf --preview "ASD") == "Yes" ] && $2
+echo -e "$1"
+[ $(echo -e "No\nYes" | fzf --height 2 ) == "Yes" ] && $2

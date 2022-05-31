@@ -1,2 +1,4 @@
 #!/bin/sh
-git add -A; git commit; git push;
+git add -A; 
+git commit; 
+prompt_cli "\nAre you sure you want to push the code?" "git push";
