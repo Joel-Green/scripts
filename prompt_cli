@@ -1,3 +1,3 @@
 #!/bin/sh
 echo -e "$1"
-[ $(echo -e "No\nYes" | fzf --height 2 ) == "Yes" ] && $2
+[ $(echo -e "No\nYes" | fzf --height 4 ) == "Yes" ] && $2

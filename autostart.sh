@@ -23,11 +23,12 @@ clipster -d &
 /home/shaw/.scripts/switchToDockedAutorandr & 
 
 sleep 1s;
-blueman-applet
+blueberry-tray
 
-sleep 5s;
+sleep 15s;
 /usr/bin/xmodmap /home/shaw/.Xmodmap &
 
+# a2ln --title-format "Phone Notification: {title} ({app})" &
 # feh --bg-fill /home/shaw/Downloads/wallpaper_redcirclesun.jpg
 # feh --bg-fill /home/shaw/.wallpapers/wallpaper_tj_holowaychuk_unsplash.jpg
 
