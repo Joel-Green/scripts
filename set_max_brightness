@@ -1,7 +1,11 @@
-#!/bin/sh
-
-bright_val=$(cat /sys/class/backlight/amdgpu_bl0/max_brightness)
+#!/bin/bash
 
 
-sudo chmod 766 /sys/class/backlight/amdgpu_bl0/brightness
-echo $bright_val > /sys/class/backlight/amdgpu_bl0/brightness
+bright_folder=$(ls /sys/class/backlight | head -n 1)
+
+
+bright_val=$(cat /sys/class/backlight/$bright_folder/max_brightness)
+
+
+sudo chmod 766 /sys/class/backlight/$bright_folder/brightness
+echo $bright_val > /sys/class/backlight/$bright_folder/brightness

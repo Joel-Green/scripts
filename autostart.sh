@@ -11,7 +11,7 @@ killall clipster
 sleep 1s
 
 
-/home/shaw/.scripts/battery_notify &
+/home/shaw/.config/scripts/battery_notify &
 # stalonetray &
 sxhkd &
 picom &
@@ -20,7 +20,7 @@ nm-applet --no-agent &
 volctl &
 clipster -d & 
 
-/home/shaw/.scripts/switchToDockedAutorandr & 
+# /home/shaw/.scripts/switchToDockedAutorandr & 
 
 sleep 1s;
 blueberry-tray

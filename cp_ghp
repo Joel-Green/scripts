@@ -1,1 +1,1 @@
-xclip -sel clip < ~/.ghp
+xclip -sel clip < ~/.config/ghp
